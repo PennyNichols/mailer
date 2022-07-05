@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const sendEmail = require('./sendmail');
+const sendEmail = require('./sendMail');
 
 router.get('/', (req, res) => {
   res.send('<h1>Main Page</h1>');
