@@ -4,7 +4,7 @@ const logger = require('morgan');
 
 require('dotenv').config();
 
-const port = process.argv[2] || process.env.APP_PORT || 8000;
+const port = process.argv[2] || process.env.PORT || 8000;
 
 const mainRouter = require('./routes/mainController');
 
