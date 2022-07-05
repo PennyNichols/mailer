@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const logger = require('morgan');
+const cors = require('cors');
 
 require('dotenv').config();
 
@@ -8,6 +9,7 @@ const port = process.argv[2] || process.env.PORT || 8000;
 
 const mainRouter = require('./routes/mainController');
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
