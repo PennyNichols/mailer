@@ -27,7 +27,7 @@ app.use(async (err, req, res, next) => {
   const xcode = code || status || 500;
   res.status(xcode).send({ code: xcode, message });
 });
-
+//listen
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
