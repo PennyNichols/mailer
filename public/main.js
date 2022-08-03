@@ -6,7 +6,7 @@ function sendEmail() {
   myHeaders.append('Content-Type', 'application/json');
 
   const raw = JSON.stringify({
-    email: 'joshua@schmidtshomeservices.com',
+    email: 'birminghamhomerental@gmail.com',
     html:
       'First Name: ' +
       document.getElementById('first-name').value +
