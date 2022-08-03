@@ -18,7 +18,7 @@ app.use('/mail', mainRouter);
 
 // catch 404 and forward to error handler
 app.use(async (req, res, next) => {
-  next({ code: 404, message: 'Sayfa bulunamadı' });
+  next({ code: 404, message: 'Error' });
 });
 // error handler
 app.use(async (err, req, res, next) => {
